@@ -19,6 +19,8 @@
 - [documentation]() - документация по проекту, how-to
 - [examples]() - примеры развертывания
 - [python]() - скрипты бизнес-логики, полезные Jupyter ноутбуки
+- [terraform]() - конфигурация для развертывания в Terraform
+
 ## Полезные ссылки
 
 [Документация по Orthanc](https://book.orthanc-server.com/index.html)

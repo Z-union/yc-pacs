@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  # Cloud Read-Write PACS HTTP only
+  cloud-rw-pacs:
+    build: cloud-rw-pacs
+    ports:
+      - "80:8042"
+    environment:
+      TRANSFERS_PLUGIN_ENABLED: "true"
+      ORTHANC__NAME: "cloud-rw-pacs"
+      OSIMIS_WEB_VIEWER1_PLUGIN_ENABLED: "true"
+      ORTHANC__REGISTERED_USERS: |
+        { "admin" : "secure-password" }
+    restart: unless-stopped
+    env_file:
+      - common-pacs.env
