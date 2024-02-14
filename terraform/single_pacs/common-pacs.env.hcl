@@ -5,7 +5,6 @@ ORTHANC__AWS_S3_STORAGE__ACCESS_KEY=${s3_storage.access_key_id}
 ORTHANC__AWS_S3_STORAGE__SECRET_KEY=${s3_storage.secret_key}
 ORTHANC__AWS_S3_STORAGE__BUCKET_NAME=${cloud_pacs_bucket.bucket}
 ORTHANC__AWS_S3_STORAGE__REGION=${cloud_pacs_bucket.region}
-ORTHANC__AWS_S3_STORAGE__ENDPOINT=${cloud_pacs_bucket.bucket_regional_domain_name}
 ORTHANC__POSTGRESQL__HOST=${pg_cluster.address}
 ORTHANC__POSTGRESQL__PORT=${pg_cluster.port}
 ORTHANC__POSTGRESQL__USERNAME=${pg_cluster.username}
