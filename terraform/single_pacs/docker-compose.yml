@@ -9,6 +9,9 @@ services:
       TRANSFERS_PLUGIN_ENABLED: "true"
       ORTHANC__NAME: "cloud-rw-pacs"
       OSIMIS_WEB_VIEWER1_PLUGIN_ENABLED: "true"
+      ORTHANC__DICOM_WEB__ENABLE: "true"
+      ORTHANC__DICOM_WEB__ROOT: "/dicom-web/"
+      PYTHON_PLUGIN_ENABLED: "true"
       ORTHANC__REGISTERED_USERS: |
         { "admin" : "secure-password" }
     restart: unless-stopped
