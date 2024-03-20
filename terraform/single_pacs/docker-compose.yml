@@ -12,6 +12,8 @@ services:
       ORTHANC__DICOM_WEB__ENABLE: "true"
       ORTHANC__DICOM_WEB__ROOT: "/dicom-web/"
       PYTHON_PLUGIN_ENABLED: "true"
+      ORTHANC__PYTHON_SCRIPT: "/etc/orthanc/anonymize.py"
+      ORTHANC__PYTHON_VERBOSE: "true"
       ORTHANC__REGISTERED_USERS: |
         { "admin" : "secure-password" }
     restart: unless-stopped
